@@ -19,9 +19,10 @@ Console.WriteLine("Массив: " + string.Join(", ", array));
 int num2 = 0;
 for (int i = 0; i < array.Length; i++)
 {
-    if (array[i]%2 == 0)
+    while (array[i]%2 == 0)
     {
         num2+=1;
+        break;
     }
 }
 Console.WriteLine($"Чётных чисел в массиве: {num2}");
