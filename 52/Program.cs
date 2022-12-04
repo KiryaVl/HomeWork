@@ -20,21 +20,21 @@ int[,] FillArray(int size, int value)
     return matrix;
 }
 Console.WriteLine("Введите размерность массива");
-Console.Write("n = ");
-int n = Convert.ToInt32(Console.ReadLine());
 Console.Write("m = ");
 int m = Convert.ToInt32(Console.ReadLine());
-int[,] newmatrix = FillArray(n, m);
+Console.Write("n = ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] newmatrix = FillArray(m, n);
 double[] newnewmatrix = new double[m];
-for (int i = 0; i < m; i++)
+for (int i = 0; i < n; i++)
 {
-    for (int j = 0; j < n; j++)
+    for (int j = 0; j < m; j++)
     {
         newnewmatrix[i] += newmatrix[j, i];
     }
 }
 
-for (int i = 0; i < m; i++)
+for (int i = 0; i < n; i++)
 {
-    Console.Write((newnewmatrix[i] / n) + " ");
+    Console.Write((newnewmatrix[i] / m) + " ");
 }
