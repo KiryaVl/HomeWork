@@ -24,4 +24,4 @@ Console.Write("m = ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("n = ");
 int n = Convert.ToInt32(Console.ReadLine());
-FillArray(m,n);
+double [,] newmatrix = FillArray(m,n);
