@@ -44,5 +44,6 @@ int n = Convert.ToInt32(Console.ReadLine());
 Console.Write("z = ");
 int z = Convert.ToInt32(Console.ReadLine());
 int[,,] matrix = FillMatrix(m,n,z);
+Console.WriteLine("-------------------------------------");
 WriteMatrix(matrix);
 Console.WriteLine("-------------------------------------");
